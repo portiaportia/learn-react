@@ -1,12 +1,14 @@
-import {Outlet, Link} from "react-router-dom";
+import {Outlet} from "react-router-dom";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
 
 const Layout = () => {
     return (
         <>
-            <h1>My header</h1>
-            <h2>My nav</h2>
-
-            <p>My content</p>
+            <Header />
+            <Navigation />
+            
+            <Outlet />
 
             <p>My footer</p>
         </>
