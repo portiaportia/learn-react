@@ -1,7 +1,12 @@
 #main-header {
-    background:navy;
+    background:#617C8C;
+    padding:10px;
 }
 
 #main-header h1 {
     color:white;
+    margin:0;
+    text-align: center;
+    padding-bottom:5px;
+
 }
