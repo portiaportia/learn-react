@@ -2,10 +2,10 @@ import "./../css/About.css";
 
 const About = () => {
     return (
-        <div id="about">
+        <main id="about" className="main-content">
             <h2>About</h2>
 
-        </div>
+        </main>
     )
 };
 

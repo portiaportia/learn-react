@@ -1,10 +1,10 @@
 #main-nav {
-    background:#9FB3BF;
+    background-color:cornflowerblue;
 }
 
 #main-nav ul {
-    display:flex;
     margin:0;
+    padding-left:0;
 }
 
 #main-nav li {
@@ -12,11 +12,17 @@
     padding:5px;
     flex:1;
     padding:5px;
+    border-bottom:1px solid white;
+    text-align:center;
 }
 
 #main-nav li a {
     text-decoration: none;
     color:white;
+}
+
+#main-nav li a:hover {
+    color:#f4d570;
 }
 
 #main-nav .hide-small {
@@ -30,5 +36,9 @@
 
     #main-nav .hide-small {
         display:flex;
+    }
+
+    #main-nav li {
+        border-bottom:0;
     }
   }

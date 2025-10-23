@@ -2,6 +2,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main-content {
+  padding:10px;
+  background:#fffaf2;
+}
 
 
 @media screen and (min-width: 768px) {
