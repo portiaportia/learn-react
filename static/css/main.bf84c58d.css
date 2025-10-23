@@ -1,0 +1,2 @@
+body{font-family:Arial,Helvetica,sans-serif}@media screen and (min-width:768px){.columns{display:flex}}#main-header{background:#617c8c;padding:10px}#main-header h1{color:#fff;margin:0;padding-bottom:5px;text-align:center}#main-nav{background:#9fb3bf}#main-nav ul{display:flex;margin:0}#main-nav li{flex:1 1;list-style-type:none;padding:5px}#main-nav li a{color:#fff;text-decoration:none}#main-nav .hide-small{display:none}@media screen and (min-width:768px){#main-nav button{display:none}#main-nav .hide-small{display:flex}}
+/*# sourceMappingURL=main.bf84c58d.css.map*/
