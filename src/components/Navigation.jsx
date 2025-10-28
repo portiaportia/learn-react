@@ -4,6 +4,7 @@ import "./../css/Navigation.css";
 const Navigation = () => {
     return (
         <nav id="main-nav">
+            <a id="toggle-nav" href="#">&darr;</a>
             <ul class="columns">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
