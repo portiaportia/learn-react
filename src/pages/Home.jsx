@@ -1,9 +1,10 @@
+import Slideshow from "./../components/Slideshow";
 import "./../css/Home.css";
 
 const Home = () => {
     return (
         <main id="home" className="main-content">
-            <h2>Home</h2>
+            <Slideshow />
         </main>
     );
 };
