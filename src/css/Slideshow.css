@@ -24,3 +24,9 @@
 #left-arrow {
     left:5%;
 }
+
+#slideshow img {
+    max-height:200px;
+    display:block;
+    margin:auto;
+}
