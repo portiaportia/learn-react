@@ -1,13 +1,12 @@
 import "../css/House.css";
-import housePic from "../images/farmhouse.jpeg";
 
 const House = (props) => {
     return (
         <section className="house">
-            <img src={housePic} alt="house" />
+            <img src={"https://portiaportia.github.io/json/images/house-plans/"+props.main_image} alt="house" />
             <div className="house-description">
                 <h1>{props.name}</h1>
-                <p>Num Bedrooms: {props.num_bedrooms}</p>
+                <p>Num Bedrooms: {props.bedrooms}</p>
             </div>
         </section>
     );
