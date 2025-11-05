@@ -25,7 +25,8 @@ const HouseList = (props) => {
                         size={house.size}
                         bedrooms={house.bedrooms}
                         bathrooms={house.bathrooms}
-                        main_image={house.main_image} />
+                        main_image={house.main_image}
+                        features={house.features} />
             ))}
         </div>
     )
