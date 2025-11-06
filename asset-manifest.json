@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/learn-react/static/css/main.efcbefef.css",
-    "main.js": "/learn-react/static/js/main.93996655.js",
+    "main.js": "/learn-react/static/js/main.c3e25bbf.js",
     "static/media/modern-farmhouse.jpg": "/learn-react/static/media/modern-farmhouse.cb4417a542389dfdcb14.jpg",
     "static/media/country-house.jpg": "/learn-react/static/media/country-house.067ec277f060ff669ef0.jpg",
     "static/media/large-driveway.jpg": "/learn-react/static/media/large-driveway.6f794cfd5161906f8d4a.jpg",
     "index.html": "/learn-react/index.html",
     "main.efcbefef.css.map": "/learn-react/static/css/main.efcbefef.css.map",
-    "main.93996655.js.map": "/learn-react/static/js/main.93996655.js.map"
+    "main.c3e25bbf.js.map": "/learn-react/static/js/main.c3e25bbf.js.map"
   },
   "entrypoints": [
     "static/css/main.efcbefef.css",
-    "static/js/main.93996655.js"
+    "static/js/main.c3e25bbf.js"
   ]
 }
