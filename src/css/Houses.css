@@ -1,0 +1,9 @@
+#houses {
+    position:relative;
+}
+
+#add-house-button {
+    position:absolute;
+    right:10px;
+    top:10px;
+}

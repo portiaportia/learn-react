@@ -29,6 +29,16 @@ body {
   text-align:center;
 }
 
+#content button {
+  border:1px solid #295095;
+  color:#295095;
+  background:rgba(100,149,237,.2);
+  font-size:1.2em;
+  font-weight:bolder;
+  border-radius:5px;
+  padding:0 7px;
+}
+
 
 @media screen and (min-width: 768px) {
   .columns {

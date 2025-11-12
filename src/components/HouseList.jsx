@@ -33,7 +33,7 @@ const HouseList = (props) => {
 
     return (
         <>
-            <button id="add-house" onClick={openAddDialog}>+</button>
+            <button id="add-house-button" onClick={openAddDialog}>+</button>
 
             {showAddDialog?(<AddHouse 
                                 closeAddDialog={closeAddDialog} 

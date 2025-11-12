@@ -59,7 +59,7 @@ const AddHousePlan = (props) => {
                             <input type="number" id="bathrooms" name="bathrooms" min="0" required></input>
                         </p>
 
-                        <section className="columns">
+                        <section>
                             <div>
                                 <p id="img-prev-section">
                                     {prevSrc!=""?
@@ -69,7 +69,7 @@ const AddHousePlan = (props) => {
                                 </p>
                             </div>
                             <p id="img-upload">
-                                <label htmlFor="img">Upload Image:</label>
+                                <label htmlFor="img">Select Image:</label>
                                 <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage} />
                             </p>
                         </section>
