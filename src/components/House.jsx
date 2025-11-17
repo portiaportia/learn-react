@@ -3,6 +3,7 @@ import {useState} from "react";
 import HouseDialog from "./HouseDialog"
 
 const House = (props) => {
+    const [house, setHouse] = useState(props);
     const [showDialog, setShowDialog] = useState(false);
 
     const showHouseDetails = () => {
@@ -12,22 +13,30 @@ const House = (props) => {
     const closeHouseDetails = () => {
         setShowDialog(false);
     }
+
+    const updateHouse = (house) => {
+        setHouse(house);
+      };
+
+
     return (
         <>
             {showDialog?(
                 <HouseDialog closeHouseDialog={closeHouseDetails} 
-                    name={props.name}
-                    bedrooms={props.bedrooms}
-                    size={props.size}
-                    bathrooms={props.bathrooms}
-                    main_image={props.main_image}
-                    features={props.features}/>
+                    _id={house._id}
+                    name={house.name}
+                    bedrooms={house.bedrooms}
+                    size={house.size}
+                    bathrooms={house.bathrooms}
+                    main_image={house.main_image}
+                    features={house.features}
+                    updateHouse={updateHouse}/>
             ):("")}
             <section className="house" onClick={showHouseDetails}>
-                <img src={"http://localhost:3001/images/"+props.main_image} alt="house" />
+                <img src={"http://localhost:3001/images/"+house.main_image} alt="house" />
                 <div className="house-description">
-                    <h1>{props.name}</h1>
-                    <p>{props.bedrooms} Bedrooms</p>
+                    <h1>{house.name}</h1>
+                    <p>{house.bedrooms} Bedrooms</p>
                 </div>
             </section>
         </>

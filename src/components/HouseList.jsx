@@ -43,7 +43,7 @@ const HouseList = (props) => {
             <div id="house-list" className="columns">
                 {houses.map((house)=>(
                     <House  key={house._id} 
-                            id={house._id}
+                            _id={house._id}
                             name={house.name} 
                             size={house.size}
                             bedrooms={house.bedrooms}
