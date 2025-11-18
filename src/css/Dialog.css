@@ -61,13 +61,21 @@
   background:rgba(100,149,237,0.2);
 }
 
+#delete-content {
+  padding:10px;
+}
+
+#delete-content button {
+  margin-right:10px;
+}
+
 @media only screen and (min-width: 600px) {
-  #img-prev-section {
-    flex: 1;
+  #img-prev {
+    max-width:30%;
   }
 
-  #img-prev {
-    max-width: 100%;
+  #img-prev-section {
+    flex: 1;
   }
 
   #img-upload {

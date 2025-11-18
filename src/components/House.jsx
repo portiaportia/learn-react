@@ -4,6 +4,7 @@ import HouseDialog from "./HouseDialog"
 
 const House = (props) => {
     const [house, setHouse] = useState(props);
+    const [showHouse, setShowHouse] = useState(true);
     const [showDialog, setShowDialog] = useState(false);
 
     const showHouseDetails = () => {
@@ -18,6 +19,10 @@ const House = (props) => {
         setHouse(house);
       };
 
+    const hideHouse = () => {
+        setShowHouse(false);
+      };
+
 
     return (
         <>
@@ -30,15 +35,20 @@ const House = (props) => {
                     bathrooms={house.bathrooms}
                     main_image={house.main_image}
                     features={house.features}
-                    updateHouse={updateHouse}/>
+                    updateHouse={updateHouse}
+                    hideHouse={hideHouse} />
             ):("")}
-            <section className="house" onClick={showHouseDetails}>
-                <img src={"http://localhost:3001/images/"+house.main_image} alt="house" />
-                <div className="house-description">
-                    <h1>{house.name}</h1>
-                    <p>{house.bedrooms} Bedrooms</p>
-                </div>
-            </section>
+
+            {showHouse?(
+                <section className="house" onClick={showHouseDetails}>
+                    <img src={"http://localhost:3001/images/"+house.main_image} alt="house" />
+                    <div className="house-description">
+                        <h1>{house.name}</h1>
+                        <p>{house.bedrooms} Bedrooms</p>
+                    </div>
+                </section>
+            ):("")}
+            
         </>
     );
 };

@@ -2,6 +2,7 @@ import "./../css/Dialog.css";
 import React, { useState } from "react";
 import HouseDetailsDialog from "./HouseDetailsDialog";
 import HouseEditDialog from "./HouseEditDialog";
+import HouseDeleteDialog from "./HouseDeleteDialog";
 
 const HouseDialog = (props) => {
     const [showContent, setShowContent] = useState("details");
@@ -15,14 +16,6 @@ const HouseDialog = (props) => {
         e.preventDefault();
         setShowContent("delete");
     }
-
-    const editHousePlan = (house) => {
-        //setHousePlan(house);
-      };
-
-      const hideHousePlan = () => {
-        //setShowHousePlan(false);
-      };
 
     return (
         <div id="house-dialog" className="w3-modal">
@@ -56,7 +49,13 @@ const HouseDialog = (props) => {
                                 bathrooms={props.bathrooms}
                                 closeEditDialog = {props.closeHouseDialog}
                                 updateHouse={props.updateHouse} />
-                        ):("")}
+                        ):(
+                            <HouseDeleteDialog 
+                                _id={props._id}
+                                name={props.name}
+                                closeDeleteDialog = {props.closeHouseDialog}
+                                hideHouse={props.hideHouse} />
+                            )}
                         
                     </div>
                 </div>
