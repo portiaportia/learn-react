@@ -58,6 +58,10 @@ const AddHousePlan = (props) => {
                             <label htmlFor="bathrooms">Bathrooms:</label>
                             <input type="number" id="bathrooms" name="bathrooms" min="0" required></input>
                         </p>
+                        <p>
+                            <label htmlFor="features">Features:</label>
+                            <textarea type="text" id="reatures" name="features"></textarea>
+                        </p>
 
                         <section>
                             <div>
