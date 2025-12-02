@@ -69,6 +69,10 @@
   margin-right:10px;
 }
 
+#house-dialog-content img {
+  max-width:30%;
+}
+
 @media only screen and (min-width: 600px) {
   #img-prev {
     max-width:30%;
